@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>AI Web Translation</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 10px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    button {
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 500;
+      transition: background-color 0.2s;
+    }
+    button:hover {
+      background-color: #3367d6;
+    }
+    select {
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    .language-select {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .btn-group {
+      display: flex;
+      gap: 8px;
+    }
+    .settings-link {
+      margin-top: 10px;
+      text-align: center;
+    }
+    .settings-link a {
+      color: #4285f4;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>AI Web Translation</h2>
+    
+    <div class="language-select">
+      <label for="target-language">翻译语言:</label>
+      <select id="target-language">
+        <option value="zh">中文</option>
+        <option value="en">English</option>
+        <option value="ja">日本語</option>
+        <option value="ko">한국어</option>
+        <option value="fr">Français</option>
+        <option value="de">Deutsch</option>
+        <option value="es">Español</option>
+        <option value="ru">Русский</option>
+      </select>
+    </div>
+    
+    <div class="btn-group">
+      <button id="translate-btn">翻译页面</button>
+      <button id="clear-btn">清除翻译</button>
+    </div>
+    
+    <div class="settings-link">
+      <a href="#" id="open-options">API设置</a>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html> 
